@@ -20,3 +20,8 @@ Route::get('contact', 'PagesController@contact');
 //Route::get('articles/{id}/edit', 'ArticlesController@edit');
 
 Route::resource('articles', 'ArticlesController');
+
+$router->controllers([
+	'auth' => 'Auth\AuthController',
+	'password' => 'Auth\PasswordController',
+]);
